@@ -1,6 +1,6 @@
 {
   "name": "react-cubes-animated",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React Cubes Falling Animation",
   "main": "./dist/index.js",
   "files": [
@@ -28,7 +28,8 @@
   "peerDependencies": {
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "three": "^0.118.3"
   },
   "devDependencies": {
     "@babel/core": "^7.10.4",
@@ -41,7 +42,6 @@
     "html-webpack-plugin": "^4.3.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
-    "sass": "^1.26.10",
     "three": "^0.118.3",
     "webpack": "^4.43.0",
     "webpack-cli": "^3.3.12",
