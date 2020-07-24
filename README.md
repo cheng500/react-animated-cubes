@@ -1,4 +1,4 @@
-# react-typing-animation
+# react-cubes-animated
 Simple Three JS Cube Edges Falling Animation
 
 **[DEMO](https://website-ee18e.firebaseapp.com/lab/react-cubes-animated)**
