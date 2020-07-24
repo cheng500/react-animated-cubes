@@ -1,8 +1,11 @@
 {
-  "name": "react-webpack-npm-boilerplate",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "react-cubes-animated",
+  "version": "1.0.2",
+  "description": "React Cubes Falling Animation",
+  "main": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "flow": "flow",
     "start": "npm run build && flow && webpack-dev-server --open --mode development --host 0.0.0.0 --config webpack.config.js",
@@ -10,8 +13,18 @@
     "build": "webpack --mode production --config webpack.prod.js",
     "dev": "flow && webpack-dev-server --open --mode development --host 0.0.0.0 --config webpack.dev.js"
   },
-  "author": "",
+  "keywords": [
+    "react",
+    "animated",
+    "cubes",
+    "edge",
+    "hook",
+    "three",
+    "animation"
+  ],
+  "author": "Ngai Cheng Kuan",
   "license": "ISC",
+  "repository": "https://github.com/cheng500/react-cubes-animated",
   "peerDependencies": {
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
@@ -34,6 +47,5 @@
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
     "webpack-node-externals": "^2.5.0"
-  },
-  "dependencies": {}
+  }
 }
