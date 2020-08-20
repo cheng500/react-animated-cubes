@@ -1,7 +1,10 @@
 {
   "name": "react-animated-cubes",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "React Cubes Falling Animation",
+  "repository": {
+    "url": "https://github.com/cheng500/react-animated-cubes"
+  },
   "main": "./dist/index.js",
   "files": [
     "dist"
