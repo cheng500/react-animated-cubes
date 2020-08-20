@@ -1,6 +1,6 @@
 {
   "name": "react-animated-cubes",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "React Cubes Falling Animation",
   "repository": {
     "url": "https://github.com/cheng500/react-animated-cubes"
@@ -27,7 +27,7 @@
   ],
   "author": "Ngai Cheng Kuan",
   "license": "ISC",
-  "repository": "https://github.com/cheng500/react-cubes-animated",
+  "repository": "https://github.com/cheng500/react-animated-cubes",
   "peerDependencies": {
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
