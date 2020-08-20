@@ -1,6 +1,6 @@
 {
   "name": "react-animated-cubes",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "React Cubes Falling Animation",
   "main": "./dist/index.js",
   "files": [

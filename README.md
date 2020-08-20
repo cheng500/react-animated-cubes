@@ -1,7 +1,7 @@
 # react-animated-cubes
 Simple Three JS Cube Edges Falling Animation
 
-**[DEMO](https://website-ee18e.firebaseapp.com/lab/react-animated-cubes/en)**
+**[DEMO](https://nckdev.agency/lab/react-animated-cubes/en)**
 
 ### Installation
 `npm install --save react-animated-cubes`
