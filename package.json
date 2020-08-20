@@ -1,5 +1,5 @@
 {
-  "name": "react-cubes-animated",
+  "name": "react-animated-cubes",
   "version": "1.0.3",
   "description": "React Cubes Falling Animation",
   "main": "./dist/index.js",
