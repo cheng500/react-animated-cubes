@@ -1,6 +1,6 @@
 {
   "name": "react-animated-cubes",
-  "version": "3.0.0",
+  "version": "3.0.2",
   "author": "NCK DEV",
   "type": "module",
   "main": "dist/animated-cubes.es.js",

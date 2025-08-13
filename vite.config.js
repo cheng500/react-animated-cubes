@@ -11,7 +11,7 @@ export default defineConfig({
       entry: "src/index.tsx",
       name: "AnimatedText",
       formats: ["es"],
-      fileName: (format) => `animated-text.${format}.js`,
+      fileName: (format) => `animated-cubes.${format}.js`,
     },
     rollupOptions: {
       // Externalize React to avoid bundling it
