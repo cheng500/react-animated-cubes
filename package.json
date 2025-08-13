@@ -1,17 +1,17 @@
 {
   "name": "react-animated-cubes",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "author": "NCK DEV",
   "type": "module",
-  "main": "dist/animated-text.umd.js",
-  "module": "dist/animated-text.es.js",
+  "main": "dist/animated-cubes.es.js",
+  "module": "dist/animated-cubes.es.js",
   "files": [
     "dist"
   ],
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "lint": "eslint . --fix",
+    "lint": "eslint . --fix && prettier --write .",
     "preview": "vite preview"
   },
   "peerDependencies": {
@@ -23,15 +23,18 @@
     "@eslint/js": "^9.32.0",
     "@types/react": "^19.1.9",
     "@types/react-dom": "^19.1.7",
+    "@types/three": "^0.179.0",
     "@vitejs/plugin-react": "^4.7.0",
     "eslint": "^9.32.0",
     "eslint-plugin-react-hooks": "^5.2.0",
     "eslint-plugin-react-refresh": "^0.4.20",
     "globals": "^16.3.0",
+    "prettier": "^3.6.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "styled-components": "^6.0.0",
-    "three": "^0.179.1",
-    "vite": "^7.1.1"
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.39.1",
+    "vite": "^7.1.1",
+    "vite-plugin-dts": "^4.5.4"
   }
 }

@@ -1,39 +1,38 @@
-import React from 'react'
-import AnimatedCubes from './AnimatedCubes'
-import { createRoot } from 'react-dom/client'
+import { useState } from "react";
+import AnimatedCubes from "./AnimatedCubes";
 
-const App = () => {
-  const [numberOfCubes, setNumberOfCubes] = React.useState(5)
-  const [maxEdgeLength, setMaxEdgeLength] = React.useState(500)
-  const [minEdgeLength, setMinEdgeLength] = React.useState(100)
-  const [maxFallingSpeed, setMaxFallingSpeed] = React.useState(10)
-  const [minFallingSpeed, setMinFallingSpeed] = React.useState(5)
-  const [maxRotationSpeed, setMaxRotatonSpeed] = React.useState(0.03)
-  const [minRotationSpeed, setMinRotationSpeed] = React.useState(0.01)
+export default function App() {
+  const [numberOfCubes, setNumberOfCubes] = useState(5);
+  const [maxEdgeLength, setMaxEdgeLength] = useState(500);
+  const [minEdgeLength, setMinEdgeLength] = useState(100);
+  const [maxFallingSpeed, setMaxFallingSpeed] = useState(10);
+  const [minFallingSpeed, setMinFallingSpeed] = useState(5);
+  const [maxRotationSpeed, setMaxRotatonSpeed] = useState(0.03);
+  const [minRotationSpeed, setMinRotationSpeed] = useState(0.01);
 
-  const handleChangeCubes = (event) => {
-    setNumberOfCubes(Number(event.target.value))
-  }
-  const handleChangeMaxEdgeLength = (event) => {
-    setMaxEdgeLength(Number(event.target.value))
-  }
-  const handleChangeMinEdgeLength = (event) => {
-    setMinEdgeLength(Number(event.target.value))
-  }
-  const handleChangeMaxFallingSpeed = (event) => {
-    setMaxFallingSpeed(Number(event.target.value))
-  }
-  const handleChangeMinFallingSpeed = (event) => {
-    setMinFallingSpeed(Number(event.target.value))
-  }
-  const handleChangeMaxRotationSpeed = (event) => {
-    setMaxRotatonSpeed(Number(event.target.value))
-  }
-  const handleChangeMinRotationSpeed = (event) => {
-    setMinRotationSpeed(Number(event.target.value))
-  }
+  const handleChangeCubes = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setNumberOfCubes(Number(event.target.value));
+  };
+  const handleChangeMaxEdgeLength = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setMaxEdgeLength(Number(event.target.value));
+  };
+  const handleChangeMinEdgeLength = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setMinEdgeLength(Number(event.target.value));
+  };
+  const handleChangeMaxFallingSpeed = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setMaxFallingSpeed(Number(event.target.value));
+  };
+  const handleChangeMinFallingSpeed = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setMinFallingSpeed(Number(event.target.value));
+  };
+  const handleChangeMaxRotationSpeed = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setMaxRotatonSpeed(Number(event.target.value));
+  };
+  const handleChangeMinRotationSpeed = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setMinRotationSpeed(Number(event.target.value));
+  };
   return (
-    <div style={{ width: '100vw', height: '100vh', color: 'white' }}>
+    <div style={{ width: "100vw", height: "100vh", color: "white" }}>
       <AnimatedCubes
         maxEdgeLength={maxEdgeLength}
         minEdgeLength={minEdgeLength}
@@ -43,23 +42,19 @@ const App = () => {
         minRotationSpeed={minRotationSpeed}
         numberOfCubes={numberOfCubes}
       >
-        <div style={{
-          display: 'flex',
-          position: 'absolute',
-          width: '100%',
-          bottom: 20,
-          alignItems: 'center',
-          justifyContent: 'space-around'
-        }}>
+        <div
+          style={{
+            display: "flex",
+            position: "absolute",
+            width: "100%",
+            bottom: 20,
+            alignItems: "center",
+            justifyContent: "space-around",
+          }}
+        >
           <div>
-            <div>Number of Cubes: { numberOfCubes }</div>
-            <input
-              type="range"
-              min="1"
-              max="10"
-              value={numberOfCubes}
-              onChange={handleChangeCubes}
-            />
+            <div>Number of Cubes: {numberOfCubes}</div>
+            <input type="range" min="1" max="10" value={numberOfCubes} onChange={handleChangeCubes} />
           </div>
           <div>
             <div>
@@ -136,12 +131,5 @@ const App = () => {
         </div>
       </AnimatedCubes>
     </div>
-  )
+  );
 }
-
-const rootElement = document.getElementById('root')
-createRoot(rootElement).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-)

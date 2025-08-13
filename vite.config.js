@@ -1,25 +1,27 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
+import dts from "vite-plugin-dts";
 
 // https://vite.dev/config/
 export default defineConfig({
-  copyPublicDir: false,
-  plugins: [react({ jsxRuntime: 'automatic' })],
+  plugins: [react({ jsxRuntime: "automatic" }), dts({ tsconfigPath: "./tsconfig.app.json", rollupTypes: true })],
   build: {
+    copyPublicDir: false,
     lib: {
-      entry: 'src/index.jsx',
-      name: 'AnimatedText',
+      entry: "src/index.tsx",
+      name: "AnimatedText",
+      formats: ["es"],
       fileName: (format) => `animated-text.${format}.js`,
     },
     rollupOptions: {
       // Externalize React to avoid bundling it
-      external: ['react', 'react-dom'],
+      external: ["react", "react-dom"],
       output: {
         globals: {
-          react: 'React',
-          'react-dom': 'ReactDOM',
+          react: "React",
+          "react-dom": "ReactDOM",
         },
       },
     },
-  }
-})
+  },
+});
